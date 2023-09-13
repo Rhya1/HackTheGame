@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hackthegame</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+  
+  
+  <nav class="navbar navbar-expand-md navbar-dark bg-transparent" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./downloads/Logo.png" width="300" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        
+        <div class="d-flex justify-content-between w-100">
+          
+          <div class="input-group ms-4 my-3 w-25">
+            <input id="searchGame" type="text" class="form-control rounded-5 px-3 py-2 f-p bg-secondary text-white border-0" aria-label="Recipient's username" aria-describedby="button-addon2">
+          </div>
+          
+          <ul class="navbar-nav f-p ms-auto">
+            <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link f-s fs-4 text-white" href="./Login.html">Login</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+          
+          
+        </div>
+      </div>
+    </nav>
+    
+    
+    <section>
+      <div class="container-fluid my-3 py-5 px-5">
+        <div class="row">
+          <div class="col-3 d-none d-md-block py-3">
+            <div class="filter-positioning">
+              
+              
+              
+              <div class="scroller py-3">
+                <p class="f-p text-white h3">
+                  New Releases
+                </p>
+                <ul class="list-unstyled f-p text-secondary">
+                  <li id="clickByName" class="my-3 fw-bold">
+                    <span>
+                      Order by Name
+                      <i class="bi bi-sort-alpha-down"></i>
+                    </span>               
+                  </li>
+                  <li id="clickByNew" class="my-3 fw-bold">
+                    <span>Order by newest
+                      <i class="bi bi-arrow-down"></i>
+                    </span>
+                  </li>
+                  <li id="clickByOld" class="my-3 fw-bold">
+                    <span>
+                      Order by oldest
+                      <i class="bi bi-arrow-up ps-2"></i>
+                    </span>               
+                  </li>
+                </ul>
+                <!-- <hr class="text-white"> -->
+                <div>
+                  <p id="topScoredWrapper" class="f-p text-white h3 filterC">Top Scored</p>
+                </div>
+                <div>
+                  <p id="allGamesWrapper" class="f-p text-white h3 filterC">All Games</p>
+                </div>
+                <p class="f-p text-white h3">Platforms</p>
+                
+                <ul class="list-unstyled f-p text-secondary">
+                  <li id="PCWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/windows-10.png" width="30px" alt=""> PC
+                    </span>
+                  </li>
+                  <li id="PlayStation4Wrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/play-station.png" width="30px" alt=""> Play Station 4
+                    </span>
+                  </li>
+                  <li id="XboxOneWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/xbox.png" width="30px" alt=""> Xbox One
+                    </span>
+                  </li>
+                  <li id="NintendoSwitchWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/nintendo-switch.png" width="30px" alt=""> Nintendo Switch
+                    </span>
+                  </li>
+                  <li id="iOSWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/icons8-logo-ios-48.png" width="30px" alt=""> iOS
+                    </span>
+                  </li>
+                  <li id="AndroidWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/icons8-android-30.png" width="30px" alt=""> Android
+                    </span>
+                  </li>
+                </ul>
+                
+                
+                <p class="f-p text-white h3">Genres</p>
+                
+                <ul class="list-unstyled f-p text-secondary">
+                  <li id="ActionWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/action.png" width="30px" alt=""> Action
+                    </span>
+                  </li>
+                  <li id="StrategyWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/strategy.jpg" width="30px" alt=""> Strategy
+                    </span>
+                  </li>
+                  <li id="RPGWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/rpg.jpg" width="30px" alt=""> RPG
+                    </span>
+                  </li>
+                  <li id="ShooterWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/shooter.jpg" width="30px" alt=""> Shooter
+                    </span>
+                  </li>
+                  <li id="AdventureWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/adventure.webp" width="30px" alt=""> Adventure
+                    </span>
+                  </li>
+                  <li id="PuzzleWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/puzzle.avif" width="30px" alt=""> Puzzle
+                    </span>
+                  </li>
+                  <li id="RacingWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/racing.jpg" width="30px" alt=""> Racing
+                    </span>
+                  </li>
+                  <li id="SportsWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/sport.jpg" width="30px" alt=""> Sports
+                    </span>
+                  </li>
+                </ul>
+                
+                <p class="f-p text-white h3">Stores</p>
+                
+                <ul class="list-unstyled f-p text-secondary">
+                  <li id="SteamWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/Steam.png" width="30px" alt=""> Steam
+                    </span>
+                  </li>
+                  <li id="PlayStationStore" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/Playstore.jpg" width="30px" alt=""> PlayStation Store
+                    </span>
+                  </li>
+                  <li id="XboxStoreWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/Xboxstore.jpeg" width="30px" alt=""> Xbox Store
+                    </span>
+                  </li>
+                  <li id="AppStoreWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/Appstore.png" width="30px" alt=""> App Store
+                    </span>
+                  </li>
+                  <li id="GOGWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/Gogstore.png" width="30px" alt=""> GOG
+                    </span>
+                  </li>
+                  <li id="NintendoStoreWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/Nintendostore.jpg" width="30px" alt=""> Nintendo Store
+                    </span>
+                  </li>
+                  <li id="Xbox360StoreWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/xbox360store.jpg" width="30px" alt=""> Xbox 360 Store
+                    </span>
+                  </li>
+                  <li id="GooglePlayWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/googleplaystore.png" width="30px" alt=""> Google Play
+                    </span>
+                  </li>
+                  <li id="itchioWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/itchstore.png" width="30px" alt=""> itch.io
+                    </span>
+                  </li>
+                  <li id="EpicGamesWrapper" class="my-3 fw-bold">
+                    <span>
+                      <img src="./downloads/Epicgame.png" width="30px" alt=""> Epic Games
+                    </span>
+                  </li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="search-positioning">
+              <p class="display-3 text-white f-s">It's Time To Game Up</p>
+              <p class="text-white f-p">It's not just a gaming news site, though. HackTheGame publishes reviews of console and PC games, as well as mobile titles and even DLC. Its reviews are straightforward, and you can read HackTheGame's scoring system to understand how it rates games.</p>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                </div>
+              </div>
+            </div>
+            <div id="gamesWrapper"  class="row mb-5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="container bottom_border">
+        <div class="row">
+          <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+            <h5 class="colonne pt">Find us</h5>
+            <p class="boh">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor <br> incididunt ut labore et dolore <br> magna aliqua.</p>
+            <p><i class="fa fa-location-arrow"></i> Via dei Gamers, 1 </p>
+            <p><i class="fa fa-phone"></i>  555 5925  </p>
+            <p><i class="fa fa fa-envelope"></i> info@arrangiati.it </p>
+          </div>
+          
+          <div class=" col-sm-4 col-md  col-6 col">
+            <h5 class="colonne pt">Quick links</h5>
+            <ul class="footer_ul">
+              <li><a href="#">Clipping Path</a></li>
+              <li><a href="#">Montage</a></li>
+              <li><a href="#">Ebay & Amazon</a></li>
+              <li><a href="#">Clipping</a></li>
+              <li><a href="#">Images</a></li>
+            </ul>
+          </div>
+          
+          <div class=" col-sm-4 col-md  col-12 col">
+            <h5 class="colonne pt">Partnership</h5>
+            
+            <ul class="footer_ul2">
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">https://www.dolor.com/</a></p></li>
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">https://www.dolor.com/</a></p></li>
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">https://www.dolor.com/</a></p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="container">
+        <ul class="foot_ul">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="text-center">Copyright @2023 | Designed With by <a href="#">HackTheGame</a></p>
+        
+        <ul class="social_footer_ul">
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+      
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    
+  </body>
+  </html>

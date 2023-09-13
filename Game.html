@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hackthegame</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-md navbar-dark bg-transparent" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./Home.html">
+        <img src="./downloads/Logo.png" width="300" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav f-p ms-auto">
+          <li class="nav-item">
+            <a class="nav-link f-s fs-4" href="./Login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container my-3 py-3">
+    <div class="row">
+      <div class="col-12 col-md-7">
+        
+        <span id="iconsPlatformsGame" class="d-flex align-items-center">
+        </span>
+        <span class="f-p text-white text-uppercase m-0">average playtime: <span id="playtime"></span></span>
+        
+        <p id="name" class="display-1 text-white f-p fw-bold">Titolo del gioco</p>
+        <button class="btn btn-outline-secondary rounded-0 f-p text-white">
+          <i class="bi bi-plus-lg"></i>
+          Write a review
+        </button>
+        
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./downloads/Purple_back.avif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          <div class="mt-3">
+            <p class="lead f-p text-white">Plot overview reviews</p>
+            <div id="plotReviews">
+              
+            </div>                    
+          </div>
+          
+          <div>
+            <p class="text-white h3 f-p">About</p>
+            <p class="text-secondary f-p small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel doloribus perferendis deserunt quod, reiciendis necessitatibus eum aut soluta debitis architecto ut a voluptatum ipsum laudantium quasi! Quaerat, ea cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quam soluta sed dolorum ex minus tempore distinctio veritatis hic nobis. Totam ad beatae suscipit unde odit reprehenderit placeat modi sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus, voluptates, fugit maiores aliquam accusamus adipisci culpa consequatur quos quibusdam reprehenderit repellat facere aperiam distinctio nesciunt veritatis rerum, suscipit numquam?</p>
+          </div>
+          
+          
+          <div>
+            <p class="text-secondary f-p small">Platforms</p>
+            <ul id="platforms" class="list-unstyled d-flex">
+              
+            </ul>
+          </div>
+          
+        </div>
+        <div class="col-12 col-md-5">
+          
+          <div class="mb-5">
+            <p class="f-p text-secondary f-s text-white">Where to buy</p>
+            <div class="container">
+              <div id="storeWrapper" class="row"></div>
+            </div>
+            
+          </div>
+          <div class="mb-5">
+            <p class="f-p text-secondary f-s text-white">General info:</p>
+            <ul class="list-unstyled fs-5 f-p">
+              <li class="w-100 d-flex justify-content-between border-bottom border-1 border-secondary py-3 punto-0">
+                <div>
+                  <p class="m-0 text-white punto me-5">Genre:</p>
+                </div>
+                <p id="gameGenreWrapper" class="text-secondary punto">Action, Adventure</p>
+              </li>
+              <li class="w-100 d-flex justify-content-between border-bottom border-1 border-secondary py-3 punto-0">
+                <div>
+                  <p class="m-0 text-white punto">Date of release:</p>
+                </div>
+                <p id="gameDateWrapper" class="text-secondary punto">Apr 21, 2023</p>
+              </li>
+              <li class="w-100 d-flex justify-content-between border-bottom border-1 border-secondary py-3 punto-0">
+                <div>
+                  <p class="m-0 text-white punto">Metacritics:</p>
+                </div>
+                <p id="gameMetaWrapper" class="text-secondary punto">123</p>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <div class="container bottom_border">
+        <div class="row">
+          <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+            <h5 class="colonne pt">Find us</h5>
+            <p class="boh">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor <br> incididunt ut labore et dolore <br> magna aliqua.</p>
+            <p><i class="fa fa-location-arrow"></i> Via dei Gamers, 1 </p>
+            <p><i class="fa fa-phone"></i>  555 5925  </p>
+            <p><i class="fa fa fa-envelope"></i> info@arrangiati.it </p>
+          </div>
+          
+          <div class=" col-sm-4 col-md  col-6 col">
+            <h5 class="colonne pt">Quick links</h5>
+            <ul class="footer_ul">
+              <li><a href="#">Clipping Path</a></li>
+              <li><a href="#">Montage</a></li>
+              <li><a href="#">Ebay & Amazon</a></li>
+              <li><a href="#">Clipping</a></li>
+              <li><a href="#">Images</a></li>
+            </ul>
+          </div>
+          
+          <div class=" col-sm-4 col-md  col-12 col">
+            <h5 class="colonne pt">Partnership</h5>
+            
+            <ul class="footer_ul2">
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">https://www.dolor.com/</a></p></li>
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">https://www.dolor.com/</a></p></li>
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">https://www.dolor.com/</a></p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="container">
+        <ul class="foot_ul">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="text-center">Copyright @2023 | Designed With by <a href="#">HackTheGame</a></p>
+        
+        <ul class="social_footer_ul">
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+      
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    
+    <script src="./GameScript.js"></script>
+  </body>
+  </html>
